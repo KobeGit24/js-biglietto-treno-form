@@ -41,7 +41,8 @@ input {
 }
 
 select,
-button {
+#btn,
+#second-btn {
     margin: 20px;
     padding: 8px;
     font-weight: bold;
