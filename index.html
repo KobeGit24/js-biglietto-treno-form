@@ -11,10 +11,22 @@
 <body>
     <div class="container">
        <div class="login">
-           <label for="name"></label>
-           <input id="name" type="text" name="" value="">
-           <input id="" type="text" name="" value="">
-           <input type="text" name="" value="">
+           <div class="information">
+               <label for="name">Nome</label>
+               <input id="name" type="text" name="" value="">
+               <label for="surname">Surname</label>
+               <input id="surname" type="text" name="" value="">
+               <label for="km">Kilometers</label>
+               <input id="km" type="number" name="km" value="">
+               <select id="age" name="age">
+                    <option id="over65" value="over65">Over 65</option>
+                    <option id="maggiorenne" value="maggiorenne" selected >Maggiorenne</option>
+                    <option id="minorenne" value="minorenne">Minorenne</option>
+               </select>
+               <button id="btn">
+                   Crea
+               </button>
+           </div>
         </div>
     </div>
 
