@@ -40,13 +40,8 @@ btn.addEventListener('click', function () {
     } else {
         document.getElementById("myticket").className = 'show';
     }
-
-    // console.log(name + " " + surname + " " + train + " " + carriage + " " + price + " " + age + " ");
-    
-
-    
+    // console.log(name + " " + surname + " " + train + " " + carriage + " " + price + " " + age + " "); 
 });
-
 
 secondBtn .addEventListener('click', function () {
     document.getElementById("myticket").className = 'hidden';
