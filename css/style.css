@@ -13,6 +13,7 @@
 }
 
 .login {
+    position: relative;
     width: 60%;
     height: 500px;
     border: 2px solid #000000;
@@ -56,4 +57,76 @@ select {
     font-weight: bold;
     font-family: Arial;
     border: 1px solid #000000;
+}
+
+.button {
+    text-align: center;
+}
+
+#myticket {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
+
+.hidden {
+    display: none;
+    transition: all 0.5s;
+}
+
+.show {
+    display: block;
+    transition: all 0.5s;
+}
+
+.ticket {
+    margin-top: 20px;;
+    display: flex;
+    justify-content: center;
+}
+
+tr th {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+tr th {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+tr td {
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#myticket .travel {
+    margin-top: 50px;
+    text-align: center;  
+}
+
+#myticket .travel h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+#myticket .travel p {
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: orangered;
 }

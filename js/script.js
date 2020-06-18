@@ -1,6 +1,6 @@
 
 var btn = document.getElementById('btn');
-var second-btn = document.getElementById('second-btn');
+var secondBtn = document.getElementById('second-btn');
 
 btn.addEventListener('click', function () {
     
@@ -28,9 +28,19 @@ btn.addEventListener('click', function () {
 
     var train = Math.floor(Math.random()*(maxTrain - minTrain + 1)) + minTrain;
     var carriage = Math.floor(Math.random()*(maxCarriage - minCarriage + 1)) + minCarriage; 
-    console.log(price);
     
-    // console.log(name, surname, km, over, maggiorenne, minorenne);  
+    document.getElementById("user").innerHTML = name + " " + surname;
+    document.getElementById("train").innerHTML = train;
+    document.getElementById("carriage").innerHTML = carriage;
+    document.getElementById("price").innerHTML = price;
+    document.getElementById("category").innerHTML = age;
+
+    // console.log(name + " " + surname + " " + train + " " + carriage + " " + price + " " + age + " ");
+    
+
+    document.getElementById("myticket").className = 'show';
 });
 
-second-btn .addEventListener('click', function () {})
+secondBtn .addEventListener('click', function () {
+    document.getElementById("myticket").className = 'hidden';
+});
