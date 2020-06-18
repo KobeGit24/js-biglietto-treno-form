@@ -17,6 +17,8 @@ btn.addEventListener('click', function () {
     var minTrain = 90000;
     var minCarriage = 1;
     var maxCarriage = 10;
+    var userName = document.getElementById('name');
+    var userSurname = document.getElementById('surname');
 
     if (age == "minorenne") {
         price = (price - youngSales).toFixed(2);
@@ -35,9 +37,8 @@ btn.addEventListener('click', function () {
 
     if ( name === "" && surname === "" ) {
         alert("Compila tutti i campi!");
-        name.classList.add('error');
-        surname.classList.add('error');
-        km.classList.add('error');
+        userName.classList.add("error");
+        userSurname.classList.add("error");
     } else {
         document.getElementById("myticket").className = 'show';
     }
