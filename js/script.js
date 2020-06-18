@@ -7,9 +7,6 @@ btn.addEventListener('click', function () {
     var name = document.getElementById('name').value;
     var surname = document.getElementById('surname').value;
     var km = document.getElementById('km').value;
-    var over = document.getElementById('over65').value;
-    var maggiorenne = document.getElementById('maggiorenne').value;
-    var minorenne = document.getElementById('minorenne').value;
     var age = document.getElementById('age').value;
     var kmPrice = 0.21;
     var price = (km * kmPrice).toFixed(2);
