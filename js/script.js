@@ -2,6 +2,7 @@
 var btn = document.getElementById('btn');
 var secondBtn = document.getElementById('second-btn');
 
+
 btn.addEventListener('click', function () {
     
     var name = document.getElementById('name').value;
@@ -21,7 +22,7 @@ btn.addEventListener('click', function () {
         price = (price - youngSales).toFixed(2);
     } else if ( age == "over65") {
         price = (price - oldSales).toFixed(2);
-    }
+    } 
 
     var train = Math.floor(Math.random()*(maxTrain - minTrain + 1)) + minTrain;
     var carriage = Math.floor(Math.random()*(maxCarriage - minCarriage + 1)) + minCarriage; 
@@ -32,11 +33,20 @@ btn.addEventListener('click', function () {
     document.getElementById("price").innerHTML = price;
     document.getElementById("category").innerHTML = age;
 
+    if ( name === "" && surname === "") {
+        alert("Compila tutti i campi!");
+        name.classList.add('error');
+        surname.classList.add('error');
+    } else {
+        document.getElementById("myticket").className = 'show';
+    }
+
     // console.log(name + " " + surname + " " + train + " " + carriage + " " + price + " " + age + " ");
     
 
-    document.getElementById("myticket").className = 'show';
+    
 });
+
 
 secondBtn .addEventListener('click', function () {
     document.getElementById("myticket").className = 'hidden';

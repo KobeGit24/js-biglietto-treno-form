@@ -1,12 +1,8 @@
-.green {
+.pari {
     height: 200px;
     background-color: green;
 }
-.red {
+.dispari {
     height: 200px;
     background-color: red;
-}
-.blue {
-    height: 200px;
-    background-color: blue;
 }

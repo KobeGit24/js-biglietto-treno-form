@@ -19,17 +19,34 @@
 //     password.innerHTML = name + " " + surname;
 // });
 
+// var btn = document.getElementById('btn');
+// var numero = document.getElementById("numero");
+
+// btn.addEventListener('click', function () {
+//     var firstNumber = parseInt(prompt('inserisci primo numero'));
+
+//     if(firstNumber<0) {
+//         numero.className = 'green';
+//     } else if (firstNumber>0) {
+//         numero.className = 'red';
+//     } else if (firstNumber==0) {
+//         numero.className = 'blue';
+//     }
+// });
+
 var btn = document.getElementById('btn');
-var numero = document.getElementById("numero");
 
 btn.addEventListener('click', function () {
-    var firstNumber = parseInt(prompt('inserisci primo numero'));
+    var numRandom = Math.floor(Math.random() * 10);
+    var numero = document.getElementById('numero');
 
-    if(firstNumber<0) {
-        numero.className = 'green';
-    } else if (firstNumber>0) {
-        numero.className = 'red';
-    } else if (firstNumber==0) {
-        numero.className = 'blue';
+    if (numRandom % 2 == 1) {  
+        numero.classList.remove('dispari');
     }
+
+    if (numRandom % 2 == 0) {
+        numero.classList.remove('pari');
+    }
+
+    console.log(numero);
 });
