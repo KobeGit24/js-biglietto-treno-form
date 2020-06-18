@@ -34,19 +34,47 @@
 //     }
 // });
 
+// var btn = document.getElementById('btn');
+
+// btn.addEventListener('click', function () {
+//     var numRandom = Math.floor(Math.random() * 10);
+//     var numero = document.getElementById('numero');
+
+//     if (numRandom % 2 == 1) {  
+//         numero.classList.remove('dispari');
+//     }
+
+//     if (numRandom % 2 == 0) {
+//         numero.classList.remove('pari');
+//     }
+
+//     console.log(numero);
+// });
+
 var btn = document.getElementById('btn');
 
 btn.addEventListener('click', function () {
-    var numRandom = Math.floor(Math.random() * 10);
-    var numero = document.getElementById('numero');
+    var numero = document.getElementById("numero");
+    var firstnumber = document.getElementById('firstnumber').value;
+    var secondnumber = document.getElementById('secondnumber').value;
+    var operation = document.getElementById('operation').value;
+    var result;
 
-    if (numRandom % 2 == 1) {  
-        numero.classList.remove('dispari');
+
+    if (operation == 'moltiplicazione') {
+        var result = firstnumber * secondnumber;
+        numero.innerHTML = result;
+
+    } else if (operation == 'divisione') {
+        var result = firstnumber / secondnumber;
+        numero.innerHTML = result;
+
+    } else if (operation == 'sottrazione') {
+        var result = firstnumber - secondnumber;
+        numero.innerHTML = result;
+
+    } else if (operation == 'addizione') {
+        var result = firstnumber + secondnumber;
+        numero.innerHTML = result;
     }
-
-    if (numRandom % 2 == 0) {
-        numero.classList.remove('pari');
-    }
-
-    console.log(numero);
 });

@@ -33,10 +33,11 @@ btn.addEventListener('click', function () {
     document.getElementById("price").innerHTML = price;
     document.getElementById("category").innerHTML = age;
 
-    if ( name === "" && surname === "") {
+    if ( name === "" && surname === "" ) {
         alert("Compila tutti i campi!");
         name.classList.add('error');
         surname.classList.add('error');
+        km.classList.add('error');
     } else {
         document.getElementById("myticket").className = 'show';
     }
